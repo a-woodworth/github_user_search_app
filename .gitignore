@@ -20,3 +20,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+# Ignore vs code files
+.vscode/*
+!.vscode/extensions.json
