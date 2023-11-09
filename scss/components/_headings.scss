@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.heading-1 {
+  font-weight: $font-weight-bold;
+
+  @include heading(
+    $font-size-700
+  );
+}
+
+.heading-2 {
+  font-weight: $font-weight-bold;
+
+  @include heading(
+    $font-size-600
+  );
+}
+
+.heading-3 {
+  span:first-child {
+    font-weight: $font-weight-default;
+
+    @include heading(
+      $font-size-200
+    );
+  }
+
+  span:last-child {
+    font-weight: $font-weight-bold;
+
+    @include heading(
+      $font-size-600
+    );
+  }
+}

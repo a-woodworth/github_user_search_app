@@ -1,0 +1,65 @@
+// Global colors
+$_clr-white: hsl(0 0% 100%); // dark text
+
+$_clr-blue-100: hsl(222 44% 70%);  // dark theme toggle hover
+$_clr-blue-200: hsl(212 100% 69%); // button hover
+$_clr-blue-300: hsl(212 100% 50%); // button primary
+$_clr-blue-400: hsl(217 20% 51%); // light card header paragraph
+$_clr-blue-500: hsl(217 35% 45%); // light text
+$_clr-blue-700: hsl(217 21% 21%); // light h3 stats number
+$_clr-blue-900: hsl(222 41% 20%); // dark input background
+
+$_clr-gray-100: rgb(254 254 254); // light input background
+$_clr-gray-300: hsl(227 100% 98%);// light background
+$_clr-gray-800: hsl(220 18% 16%); // light theme toggle hover
+$_clr-gray-900: hsl(220 40% 13%); // dark background
+
+$_clr-red-500: hsl(0 92% 62%); // error
+
+$light: (
+  'neutral' : (
+    '100' : $_clr-white,
+    '500' : $_clr-red-500,
+  ),
+  'accent' : (
+    '200' : $_clr-blue-200,
+    '300' : $_clr-blue-300,
+  ),
+  'primary' : (
+    '100' : $_clr-gray-100,
+    '300' : $_clr-gray-300,
+    '400' : $_clr-blue-400,
+    '500' : $_clr-blue-500,
+    '700' : $_clr-blue-700,
+    '800' : $_clr-gray-800,
+  ),
+);
+
+$dark: (
+  'neutral' : (
+    '100' : $_clr-white,
+    '500' : $_clr-red-500,
+  ),
+  'accent' : (
+    '100' : $_clr-blue-100,
+    '200' : $_clr-blue-200,
+    '300' : $_clr-blue-300,
+  ),
+  'primary' : (
+    '100' : $_clr-blue-900,
+    '300' : $_clr-gray-900,
+  ),
+);
+
+// Color Variables
+$color-neutral-100: var(--neutral-100);
+$color-neutral-500: var(--neutral-500);
+$color-accent-100: var(--accent-100);
+$color-accent-200: var(--accent-200);
+$color-accent-300: var(--accent-300);
+$color-primary-100: var(--primary-100);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+$color-primary-500: var(--primary-500);
+$color-primary-700: var(--primary-700);
+$color-primary-800: var(--primary-800);

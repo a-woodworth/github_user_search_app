@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.site-header {
+  margin-block-start: 1.875rem;
+  margin-block-end: 2.1875rem;
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+}

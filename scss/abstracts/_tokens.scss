@@ -1,0 +1,65 @@
+@use 'colors' as *;
+@use 'typography' as *;
+
+$active-theme: $dark;
+$enable-media-query-dark-mode: true;
+
+// Theme Colors
+$color-text-default: $color-neutral-100;
+$color-background-default: $color-primary-300;
+$color-text-light-theme: $color-primary-500;
+$color-text-unavailable: 0.5; // Opacity setting
+
+// Border Radius
+$border-radius-1: 0.625rem;
+$border-radius-2: 0.9375rem;
+
+// Box Shadow
+$box-shadow-1: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+
+// Container
+$container-min-margin-inline: 1rem;
+$container-max-width: 35.8125rem;
+
+// Gap Sizes
+$flex-group-gap: 1rem;
+$grid-gap: 1rem;
+
+// Typography
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-300;
+$body-line-height: 1.5;
+$body-font-weight: $font-weight-default;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+// Heading Defaults
+$heading-color-default: $body-text-color;
+$heading-font-weight: $font-weight-bold;
+$heading-color-bold-light-theme: $color-primary-700;
+
+// Buttons
+$button-font-family: $body-font-family;
+$button-font-size: $font-size-400;
+$button-font-weight: $font-weight-bold;
+$button-padding: 0.8125rem 2rem;
+$button-border: 0;
+$button-border-radius: $border-radius-1;
+
+// Primary Btn
+$button-primary-color: $color-neutral-100;
+$button-primary-background: $color-accent-300;
+$button-primary-color-hover: $color-accent-200;
+
+// Dark-theme Toggle Btn
+$button-dark-toggle-color: $color-primary-500;
+$button-dark-toggle-hover: $color-accent-100;
+
+// Light-theme Toggle Btn
+$button-light-toggle-color: $color-primary-400;
+$button-light-toggle-hover: $color-primary-800;
+
+// Card Defaults
+$card-background-default: $color-primary-100;
+$card-border-radius: $border-radius-2;
+$card-box-shadow: $box-shadow-1;

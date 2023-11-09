@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.btn {
+  background-color: $button-primary-background;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  color: $button-primary-color;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  padding: $button-padding;
+  text-decoration: none;
+  transition: 275ms ease;
+
+  &:is(:hover, :focus) {
+    background-color: $button-primary-color-hover;
+  }
+
+  &[data-type="theme-toggle"] {
+    background-color: inherit;
+    padding-inline: revert;
+    text-transform: uppercase;
+  }
+}
