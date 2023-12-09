@@ -41,37 +41,33 @@
     </header>
 
     <main class="container">
-      <form role="search" action="#">
-        <div class="form__field | box-shadow-1">
-          <img src="./assets/icon-search.svg" alt="Search icon" aria-hidden="true" height="24" width="25">
-          <input
-            type="search"
-            id="search"
-            name="search"
-            class="js-search-input"
-            placeholder="Search GitHub username"
-            aria-label="Search GitHub username"
-            maxlength="39">
-          <button class="btn" type="submit">Search</button>
-          <p class="error" id="search-error">No results</p>
-        </div>
+      <form class="box-shadow-1" role="search" action="#">
+        <img class="search-icon" src="./assets/icon-search.svg" alt="Search icon" aria-hidden="true" height="24" width="25">
+        <input
+          type="search"
+          id="search"
+          name="search"
+          class="js-search-input"
+          placeholder="Search GitHub username&hellip;"
+          aria-label="Search GitHub username"
+          maxlength="39">
+        <span class="error" id="search-error">No results</span>
+        <button class="btn" type="submit">Search</button>
       </form>
       <div class="card | box-shadow-1">
-        <div class="card__heading | flex-group">
-          <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="The Octocat avatar" class="js-user-avatar" height="117" width="117">
-          <div class="card__title | flex-group">
-            <h2 class="heading-2 js-user-name">The Octocat</h2>
-            <p class="js-user-id">
-              <a href="https://github.com/octocat" target="_blank" rel="noopener">octocat</a>
-            </p>
-            <p>Joined <span class="js-user-created-at">25 Jan 2011</span></p>
-          </div>
+        <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="The Octocat avatar" class="js-user-avatar" height="117" width="117">
+        <div class="card__heading">
+          <h2 class="heading-2 js-user-name">The Octocat</h2>
+          <p class="js-user-id">
+            <a href="https://github.com/octocat" target="_blank" rel="noopener">@octocat</a>
+          </p>
+          <p class="date">Joined <span class="js-user-created-at">25 Jan 2011</span></p>
         </div>
         <div class="card__body">
           <p class="js-user-bio">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eveniet fugiat impedit. Donec odio. Quisque volutpat mattis eros.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec odio. Quisque volutpat mattis eros.
           </p>
-          <ul class="stat__list">
+          <ul class="stat__list | flex-group">
             <li>
               <h3 class="heading-3">
                 <span class="stat__type">Repos</span><br>

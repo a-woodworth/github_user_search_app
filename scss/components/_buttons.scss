@@ -10,9 +10,13 @@
   font-family: $button-font-family;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
-  padding: $button-padding;
+  padding: 0.78125rem 1.125rem;
   text-decoration: none;
   transition: 275ms ease;
+
+  @include mq('medium') {
+    padding: 0.78125rem 1.5rem;
+  }
 
   &:is(:hover, :focus) {
     background-color: $button-primary-color-hover;
@@ -22,5 +26,9 @@
     background-color: inherit;
     padding-inline: revert;
     text-transform: uppercase;
+
+    @include mq('medium') {
+      font-size: $font-size-200;
+    }
   }
 }

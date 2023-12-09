@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+
+form[role="search"] {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-block-end: 1rem;
+  // max-width: $container-max-width;
+  position: relative;
+
+  .search-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    left: 1rem;
+
+    @include mq('medium') {
+      height: 1.5rem;
+      width: 1.5rem;
+      left: 2rem;
+    }
+  }
+
+  input {
+    background-color: $form-background-default;
+    color: $form-color-default;
+    border: none;
+    border-radius: $form-input-border-radius;
+    cursor: pointer;
+    padding: 1.25rem 1rem 1.25rem 2.8125rem;
+
+    @include mq('medium') {
+      font-size: $font-size-500;
+      padding: 1.25rem 1rem 1.25rem 5rem;
+    }
+
+    &::placeholder {
+      color: $form-color-placeholder-text;
+      opacity: 1;
+    }
+  }
+
+  button {
+   position: absolute;
+   right: 0.5rem;
+
+   @include mq('medium') {
+      right: 0.625rem;
+    }
+  }
+
+  .error {
+    color: $color-error;
+    position: absolute;
+    right: 6.25rem;
+
+    @include mq('medium') {
+      right: 8.75rem;
+    }
+  }
+}

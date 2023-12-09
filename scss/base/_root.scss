@@ -53,6 +53,13 @@ body[data-theme='light'] {
     color: $heading-color-bold-light-theme;
   }
 
+  form[role="search"] input {
+    color: $form-color-input-light-theme;
+  }
+
+  form[role="search"] input::placeholder,
+  .card__title p,
+  .card__heading-group p,
   .card__body p,
   .card__footer p,
   .card__footer svg,

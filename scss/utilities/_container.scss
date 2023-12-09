@@ -1,9 +1,11 @@
 @use '../abstracts' as *;
 
 .container {
-  --padding: #{$container-min-margin-inline} * 2;
-  --max-width: #{$container-max-width};
-
-  width: min(100% - var(--padding), var(--max-width));
+  // 100% - $container-padding * 2, $container-max-width
+  width: min(100% - 2rem, 35.8125rem);
   margin-inline: auto;
+
+  @include mq('large') {
+    width: min(100% - 2rem, 45.625rem);
+  }
 }

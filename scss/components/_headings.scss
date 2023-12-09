@@ -14,6 +14,12 @@
   @include heading(
     $font-size-600
   );
+
+  @include mq('medium') {
+    @include heading(
+      $font-size-700
+    );
+  }
 }
 
 .heading-3 {

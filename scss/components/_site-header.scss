@@ -4,6 +4,10 @@
   margin-block-start: 1.875rem;
   margin-block-end: 2.1875rem;
 
+  @include mq('medium') {
+    margin-block-start: 8.75rem;
+  }
+
   &__layout {
     display: flex;
     justify-content: space-between;
