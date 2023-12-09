@@ -373,8 +373,13 @@ form[role=search] .error {
 }
 
 .site-header {
-  margin-block-start: 1.875rem;
-  margin-block-end: 2.1875rem;
+  padding-block-start: 1.875rem;
+  padding-block-end: 2.1875rem;
+}
+@media screen and (min-width: 35.8125rem) {
+  .site-header {
+    padding-block-start: 8.75rem;
+  }
 }
 @media screen and (min-width: 35.8125rem) {
   .site-header {

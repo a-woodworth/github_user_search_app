@@ -1,8 +1,12 @@
 @use '../abstracts' as *;
 
 .site-header {
-  margin-block-start: 1.875rem;
-  margin-block-end: 2.1875rem;
+  padding-block-start: 1.875rem;
+  padding-block-end: 2.1875rem;
+
+  @include mq('medium') {
+    padding-block-start: 8.75rem;
+  }
 
   @include mq('medium') {
     margin-block-start: 8.75rem;
