@@ -383,7 +383,7 @@ form[role=search] .error {
 }
 @media screen and (min-width: 35.8125rem) {
   .site-header {
-    margin-block-start: 8.75rem;
+    padding-block-start: 8.75rem;
   }
 }
 .site-header__layout {
