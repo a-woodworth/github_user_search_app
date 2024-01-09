@@ -111,12 +111,16 @@
 
   @include mq('medium') {
     margin-block-end: 2rem;
-    padding: 1.125rem 2rem;
+    padding: 1rem 2rem;
     text-align: left;
 
     li {
       flex-basis: 30%;
     }
+  }
+
+  @include mq('large') {
+    margin-block-end: 2.5rem;
   }
 }
 

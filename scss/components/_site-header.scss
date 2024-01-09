@@ -8,8 +8,8 @@
     padding-block-start: 8.75rem;
   }
 
-  @include mq('medium') {
-    padding-block-start: 8.75rem;
+  @include mq('large') {
+    padding-block-start: 9rem;
   }
 
   &__layout {

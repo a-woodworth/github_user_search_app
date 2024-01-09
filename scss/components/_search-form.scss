@@ -27,11 +27,11 @@ form[role="search"] {
     border: none;
     border-radius: $form-input-border-radius;
     cursor: pointer;
-    padding: 1.25rem 1rem 1.25rem 2.8125rem;
+    padding: 1.125rem 1rem 1.125rem 2.8125rem;
 
     @include mq('medium') {
       font-size: $font-size-500;
-      padding: 1.25rem 1rem 1.25rem 5rem;
+      padding: 1.375rem 1rem 1.375rem 5rem;
     }
 
     &::placeholder {
@@ -57,5 +57,9 @@ form[role="search"] {
     @include mq('medium') {
       right: 8.75rem;
     }
+  }
+
+  @include mq('medium') {
+    margin-block-end: 1.5rem;
   }
 }
