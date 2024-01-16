@@ -1,9 +1,6 @@
 @use 'colors' as *;
 @use 'typography' as *;
 
-$active-theme: $dark;
-$enable-media-query-dark-mode: true;
-
 // Theme Colors
 $color-text-default: $color-neutral-100;
 $color-background-default: $color-primary-300;
