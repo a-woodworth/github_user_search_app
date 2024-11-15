@@ -37,11 +37,11 @@ body[data-theme='light'] {
     color: $heading-color-bold-light-theme;
   }
 
-  form[role="search"] input {
+  form[role='search'] input {
     color: $form-color-input-light-theme;
   }
 
-  form[role="search"] input::placeholder,
+  form[role='search'] input::placeholder,
   .card__title p,
   .card__heading-group p,
   .card__body p,
@@ -49,6 +49,10 @@ body[data-theme='light'] {
   .card__footer svg,
   .heading-3 span:first-child {
     color: $color-text-light-theme;
+  }
+
+  .js-user-id a {
+    color: $card-title-link-color-light;
   }
 }
 

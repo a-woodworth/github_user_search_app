@@ -19,7 +19,7 @@ body[data-theme=light] {
   --neutral-100: hsl(0, 0%, 100%);
   --neutral-500: hsl(0, 92%, 62%);
   --accent-200: hsl(212, 100%, 69%);
-  --accent-300: hsl(212, 100%, 50%);
+  --accent-300: hsl(212, 100%, 45%);
   --primary-100: rgb(254, 254, 254);
   --primary-300: hsl(227, 100%, 98%);
   --primary-400: hsl(217, 20%, 51%);
@@ -50,13 +50,16 @@ body[data-theme=light] .card__footer svg,
 body[data-theme=light] .heading-3 span:first-child {
   color: var(--primary-500);
 }
+body[data-theme=light] .js-user-id a {
+  color: var(--accent-300);
+}
 
 body[data-theme=dark] {
   --neutral-100: hsl(0, 0%, 100%);
   --neutral-500: hsl(0, 92%, 62%);
   --accent-100: hsl(222, 44%, 70%);
   --accent-200: hsl(212, 100%, 69%);
-  --accent-300: hsl(212, 100%, 50%);
+  --accent-300: hsl(212, 100%, 45%);
   --primary-100: hsl(222, 41%, 20%);
   --primary-300: hsl(220, 40%, 13%);
 }
@@ -195,7 +198,7 @@ a:hover, a:focus {
   grid-column: 2;
 }
 .card__heading .js-user-id a {
-  color: var(--accent-300);
+  color: var(--accent-200);
 }
 @media screen and (min-width: 35.8125rem) {
   .card__heading .js-user-id {
