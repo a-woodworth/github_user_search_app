@@ -43,7 +43,7 @@ body[data-theme=light] form[role=search] input {
 }
 body[data-theme=light] form[role=search] input::placeholder,
 body[data-theme=light] .card__title p,
-body[data-theme=light] .card__heading-group p,
+body[data-theme=light] .card__heading p,
 body[data-theme=light] .card__body p,
 body[data-theme=light] .card__footer p,
 body[data-theme=light] .card__footer svg,
