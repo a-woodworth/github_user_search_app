@@ -1,11 +1,10 @@
 @use '../abstracts' as *;
 
-form[role="search"] {
+form[role='search'] {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   margin-block-end: 1rem;
-  // max-width: $container-max-width;
   position: relative;
 
   .search-icon {
@@ -38,13 +37,17 @@ form[role="search"] {
       color: $form-color-placeholder-text;
       opacity: 1;
     }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
   }
 
   button {
-   position: absolute;
-   right: 0.5rem;
+    position: absolute;
+    right: 0.5rem;
 
-   @include mq('medium') {
+    @include mq('medium') {
       right: 0.625rem;
     }
   }
