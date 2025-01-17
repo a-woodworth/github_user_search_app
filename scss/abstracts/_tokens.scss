@@ -47,6 +47,7 @@ $button-border-radius: $border-radius-1;
 $button-primary-color: $color-neutral-100;
 $button-primary-background: $color-accent-300;
 $button-primary-color-hover: $color-accent-200;
+$button-primary-color-hover-text: $color-primary-700;
 
 // Dark-theme Toggle Btn
 $button-dark-toggle-color: $color-primary-500;
@@ -72,3 +73,4 @@ $form-color-default: $body-text-color;
 $form-color-input-light-theme: $color-primary-700;
 $form-color-placeholder-text: $body-text-color;
 $form-input-border-radius: $border-radius-2;
+$form-input-error-text-weight: $font-weight-bold;

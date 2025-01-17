@@ -54,6 +54,7 @@ form[role='search'] {
 
   .error {
     color: $color-error;
+    font-weight: $form-input-error-text-weight;
     position: absolute;
     right: 6.25rem;
 

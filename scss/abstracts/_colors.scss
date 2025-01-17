@@ -15,7 +15,9 @@ $_clr-gray-300: hsl(227 100% 98%); // light background
 $_clr-gray-800: hsl(220 18% 16%); // light theme toggle hover
 $_clr-gray-900: hsl(220 40% 13%); // dark background
 
-$_clr-red-500: hsl(0 92% 62%); // error
+$_clr-red-300: hsl(0 100% 81%); // dark error
+$_clr-red-500: hsl(0 100% 35%); // light error
+// Changed hsl(0 92% 62%) to pass accessibility contrast ratio
 
 $light: (
   'neutral': (
@@ -39,7 +41,7 @@ $light: (
 $dark: (
   'neutral': (
     '100': $_clr-white,
-    '500': $_clr-red-500,
+    '500': $_clr-red-300,
   ),
   'accent': (
     '100': $_clr-blue-100,
@@ -49,6 +51,7 @@ $dark: (
   'primary': (
     '100': $_clr-blue-900,
     '300': $_clr-gray-900,
+    '700': $_clr-blue-700,
   ),
 );
 

@@ -20,10 +20,12 @@
 
   &:is(:hover, :focus) {
     background-color: $button-primary-color-hover;
+    color: $button-primary-color-hover-text;
   }
 
-  &[data-type="theme-toggle"] {
+  &[data-type='theme-toggle'] {
     background-color: inherit;
+    letter-spacing: 2.5px;
     padding-inline: revert;
     text-transform: uppercase;
 

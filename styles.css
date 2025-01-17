@@ -17,7 +17,7 @@
 
 body[data-theme=light] {
   --neutral-100: hsl(0, 0%, 100%);
-  --neutral-500: hsl(0, 92%, 62%);
+  --neutral-500: hsl(0, 100%, 35%);
   --accent-200: hsl(212, 100%, 69%);
   --accent-300: hsl(212, 100%, 45%);
   --primary-100: rgb(254, 254, 254);
@@ -56,12 +56,13 @@ body[data-theme=light] .js-user-id a {
 
 body[data-theme=dark] {
   --neutral-100: hsl(0, 0%, 100%);
-  --neutral-500: hsl(0, 92%, 62%);
+  --neutral-500: hsl(0, 100%, 81%);
   --accent-100: hsl(222, 44%, 70%);
   --accent-200: hsl(212, 100%, 69%);
   --accent-300: hsl(212, 100%, 45%);
   --primary-100: hsl(222, 41%, 20%);
   --primary-300: hsl(220, 40%, 13%);
+  --primary-700: hsl(217, 21%, 21%);
 }
 body[data-theme=dark] button[data-type=theme-toggle] {
   color: var(--primary-500);
@@ -146,9 +147,11 @@ a:hover, a:focus {
 }
 .btn:is(:hover, :focus) {
   background-color: var(--accent-200);
+  color: var(--primary-700);
 }
 .btn[data-type=theme-toggle] {
   background-color: inherit;
+  letter-spacing: 2.5px;
   padding-inline: revert;
   text-transform: uppercase;
 }
@@ -385,6 +388,7 @@ form[role=search] button {
 }
 form[role=search] .error {
   color: var(--neutral-500);
+  font-weight: 700;
   position: absolute;
   right: 6.25rem;
 }

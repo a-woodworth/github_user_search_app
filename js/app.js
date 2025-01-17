@@ -196,4 +196,4 @@ searchForm.addEventListener('submit', (e) => {
 searchInput.addEventListener('input', clearError);
 
 // Display default user
-// fetchGitHubUser(defaultUser);
+fetchGitHubUser(defaultUser);
