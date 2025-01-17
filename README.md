@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/github-user-search-app---javascript-and-sass-hHDfYJXjAK)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/github_user_search_app/)
 
 ### Built with
